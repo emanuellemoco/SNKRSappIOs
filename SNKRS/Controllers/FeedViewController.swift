@@ -9,21 +9,44 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
 
-        // Do any additional setup after loading the view.
+        tableView.register(UINib(nibName: "FeedCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension FeedViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return calendars.count
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! FeedCell
+        cell.textLabel?.text = "dsdsadsadsadsa"
+        cell.tituloLabel.text = "THIS IS A TEST"
+        cell.sizeLabel.text = "34"
+//        cell.tituloLabel.text = calendars[indexPath.row].title
+//        cell.diaLabel.text = calendars[indexPath.row].dia
+//        cell.mesLabel.text = calendars[indexPath.row].mes
+//        cell.tenisImage.image = UIImage(named: calendars[indexPath.row].imagePath)
+//        cell.date?.text = calendars[indexPath.row].date
+        return cell
+    }
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
+    }
+}
+
