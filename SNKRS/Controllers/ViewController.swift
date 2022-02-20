@@ -7,8 +7,20 @@
 
 import SCLAlertView
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
+   
+    
+
+    @IBOutlet var CollectionViewIB: UICollectionView!
+    
+    var currentCellIndex = 0
+    
+//    var feedImages = ["slider3", "slider3", "slider3", "slider3", "slider3"]
+    
+//    var timer:Timer?
+    
     
     private let table = UITableView()
     @IBOutlet weak var emailTextField: UITextField!
@@ -16,18 +28,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        table.delegate = self
-//        table.dataSource = self
+        
+//        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(slideToNext), userInfo: nil, repeats: true)
     }
 
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 10
-//    }
+//    @objc func slideToNext(){
+//        if currentCellIndex < feedImages.count-1 {
+//            currentCellIndex += 1
 //
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = UITableViewCell()
-//        cell.textLabel?.tect
+//        } else {
+//            currentCellIndex = 0
+//        }
+//        CollectionViewIB.scrollToItem(at: IndexPath(item: currentCellIndex, section: 0), at: .right , animated: true)
 //    }
+
     @IBAction func sendButton(_ sender: UIButton) {
         let emailReg: String = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         let emailTest: NSPredicate = NSPredicate(format: "SELF MATCHES %@", emailReg)
@@ -43,13 +57,26 @@ class ViewController: UIViewController {
         SCLAlertView().showSuccess("Sucesso" , subTitle: "Agora voce vai saber de todas as novidades")
             emailTextField.text = ""
         }
-  
 
-
-        
-    
-    
-    
     }
 }
+
+
+//extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+//
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return feedImages.count
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//
+//        let cell = CollectionViewIB.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+//        cell.myImage.image = UIImage(named: feedImages[currentCellIndex])
+//        return cell
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: CollectionViewIB.frame.width, height: CollectionViewIB.frame.height)
+//    }
+//}
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C08065927C2FF4F00F8F61A /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C08065827C2FF4F00F8F61A /* Feed.swift */; };
 		8C70F3E127C00090006656C0 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70F3DF27C00090006656C0 /* CalendarCell.swift */; };
 		8C70F3E227C00090006656C0 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C70F3E027C00090006656C0 /* CalendarCell.xib */; };
 		8C70F40727C0943D006656C0 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C70F40527C0943D006656C0 /* FeedCell.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		5AA90864E6F54477DD749249 /* Pods-SNKRS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNKRS.debug.xcconfig"; path = "Target Support Files/Pods-SNKRS/Pods-SNKRS.debug.xcconfig"; sourceTree = "<group>"; };
 		87D68B9DA0DFECF1463E4A30 /* Pods-SNKRS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNKRS.release.xcconfig"; path = "Target Support Files/Pods-SNKRS/Pods-SNKRS.release.xcconfig"; sourceTree = "<group>"; };
+		8C08065827C2FF4F00F8F61A /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		8C70F3DF27C00090006656C0 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		8C70F3E027C00090006656C0 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		8C70F40527C0943D006656C0 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				8CF3835227BFDB1100FC475F /* Calendar.swift */,
+				8C08065827C2FF4F00F8F61A /* Feed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF3834E27BFCB3B00FC475F /* CalendarViewController.swift in Sources */,
+				8C08065927C2FF4F00F8F61A /* Feed.swift in Sources */,
 				8C70F3E127C00090006656C0 /* CalendarCell.swift in Sources */,
 				8CF3835327BFDB1100FC475F /* Calendar.swift in Sources */,
 				8CF3833D27BFBF1000FC475F /* ViewController.swift in Sources */,
