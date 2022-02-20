@@ -1,0 +1,6 @@
+framework module Pods_SNKRS {
+  umbrella header "Pods-SNKRS-umbrella.h"
+
+  export *
+  module * { export * }
+}

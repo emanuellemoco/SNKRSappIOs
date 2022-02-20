@@ -20,9 +20,12 @@
 		8CF3834E27BFCB3B00FC475F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3834D27BFCB3B00FC475F /* CalendarViewController.swift */; };
 		8CF3835027BFCB5D00FC475F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3834F27BFCB5D00FC475F /* FeedViewController.swift */; };
 		8CF3835327BFDB1100FC475F /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3835227BFDB1100FC475F /* Calendar.swift */; };
+		945CC5CD907FBBAB1D2B4898 /* Pods_SNKRS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B265602F6A1712DB375A36B6 /* Pods_SNKRS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AA90864E6F54477DD749249 /* Pods-SNKRS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNKRS.debug.xcconfig"; path = "Target Support Files/Pods-SNKRS/Pods-SNKRS.debug.xcconfig"; sourceTree = "<group>"; };
+		87D68B9DA0DFECF1463E4A30 /* Pods-SNKRS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNKRS.release.xcconfig"; path = "Target Support Files/Pods-SNKRS/Pods-SNKRS.release.xcconfig"; sourceTree = "<group>"; };
 		8C70F3DF27C00090006656C0 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		8C70F3E027C00090006656C0 /* CalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
 		8C70F40527C0943D006656C0 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		8CF3834D27BFCB3B00FC475F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		8CF3834F27BFCB5D00FC475F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8CF3835227BFDB1100FC475F /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		B265602F6A1712DB375A36B6 /* Pods_SNKRS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNKRS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,15 +49,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945CC5CD907FBBAB1D2B4898 /* Pods_SNKRS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54C131160C210D7D97579C50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B265602F6A1712DB375A36B6 /* Pods_SNKRS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		829611C659B70B2F64FE6110 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AA90864E6F54477DD749249 /* Pods-SNKRS.debug.xcconfig */,
+				87D68B9DA0DFECF1463E4A30 /* Pods-SNKRS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8C70F3DE27C0005F006656C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8CF3834327BFBF1200FC475F /* LaunchScreen.storyboard */,
 				8CF3833E27BFBF1000FC475F /* Main.storyboard */,
 				8C70F3DF27C00090006656C0 /* CalendarCell.swift */,
 				8C70F3E027C00090006656C0 /* CalendarCell.xib */,
@@ -68,6 +91,8 @@
 			children = (
 				8CF3833727BFBF1000FC475F /* SNKRS */,
 				8CF3833627BFBF1000FC475F /* Products */,
+				829611C659B70B2F64FE6110 /* Pods */,
+				54C131160C210D7D97579C50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +113,6 @@
 				8CF3835527BFDB2A00FC475F /* Models */,
 				8CF3834C27BFCB1F00FC475F /* Controllers */,
 				8CF3834127BFBF1200FC475F /* Assets.xcassets */,
-				8CF3834327BFBF1200FC475F /* LaunchScreen.storyboard */,
 				8CF3834627BFBF1200FC475F /* Info.plist */,
 			);
 			path = SNKRS;
@@ -119,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CF3834927BFBF1200FC475F /* Build configuration list for PBXNativeTarget "SNKRS" */;
 			buildPhases = (
+				461A8CBDD5AC7E0C2ABD32F2 /* [CP] Check Pods Manifest.lock */,
 				8CF3833127BFBF1000FC475F /* Sources */,
 				8CF3833227BFBF1000FC475F /* Frameworks */,
 				8CF3833327BFBF1000FC475F /* Resources */,
+				D6444E267C31F579FC19160A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +205,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		461A8CBDD5AC7E0C2ABD32F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNKRS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6444E267C31F579FC19160A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNKRS/Pods-SNKRS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNKRS/Pods-SNKRS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNKRS/Pods-SNKRS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CF3833127BFBF1000FC475F /* Sources */ = {
@@ -336,6 +404,7 @@
 		};
 		8CF3834A27BFBF1200FC475F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA90864E6F54477DD749249 /* Pods-SNKRS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -363,6 +432,7 @@
 		};
 		8CF3834B27BFBF1200FC475F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D68B9DA0DFECF1463E4A30 /* Pods-SNKRS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
