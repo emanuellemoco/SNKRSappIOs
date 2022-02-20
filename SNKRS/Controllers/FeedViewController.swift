@@ -16,6 +16,7 @@ class FeedViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.delegate = self
 
         tableView.register(UINib(nibName: "FeedCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         
@@ -23,7 +24,11 @@ class FeedViewController: UIViewController {
 
 }
 
-extension FeedViewController: UITableViewDataSource {
+extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 220
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return calendars.count
@@ -32,7 +37,7 @@ extension FeedViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! FeedCell
-        cell.textLabel?.text = "dsdsadsadsadsa"
+//        cell.textLabel?.text = "dsdsadsadsadsa"
         cell.tituloLabel.text = "THIS IS A TEST"
         cell.sizeLabel.text = "34"
 //        cell.tituloLabel.text = calendars[indexPath.row].title
@@ -44,9 +49,9 @@ extension FeedViewController: UITableViewDataSource {
     }
 }
 
-extension ViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
-    }
-}
+//extension FeedViewController: UITableViewDelegate {
+////    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+////        return 200
+////    }
+//}
 

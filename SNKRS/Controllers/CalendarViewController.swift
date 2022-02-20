@@ -45,12 +45,17 @@ class CalendarViewController: UIViewController{
 
 //        tableView.delegate = self
         tableView.dataSource = self
+        tableView.delegate = self
         
         tableView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
     }
 }
 
-extension CalendarViewController: UITableViewDataSource {
+extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return calendars.count
