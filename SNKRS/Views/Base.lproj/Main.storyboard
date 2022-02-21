@@ -58,7 +58,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="797"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eHQ-6p-cpO">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="750"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SNEAKERS APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-y3-ToV">
                                                 <rect key="frame" x="68.5" y="10" width="277.5" height="60"/>
@@ -140,9 +140,6 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="wjX-yx-cf8" secondAttribute="bottom" constant="15" id="y3h-PV-aSq"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -165,7 +162,6 @@
                                             <constraint firstAttribute="trailing" secondItem="55L-oG-PnU" secondAttribute="trailing" constant="5" id="eq9-Mr-4vO"/>
                                             <constraint firstItem="cIj-0g-QtK" firstAttribute="top" secondItem="AhK-CZ-ZKA" secondAttribute="bottom" constant="20" id="f4J-me-B0E"/>
                                             <constraint firstItem="AhK-CZ-ZKA" firstAttribute="leading" secondItem="eHQ-6p-cpO" secondAttribute="leading" constant="10" id="jCh-hV-qvW"/>
-                                            <constraint firstAttribute="height" constant="800" id="lNS-Z8-oDf"/>
                                             <constraint firstItem="AhK-CZ-ZKA" firstAttribute="top" secondItem="55L-oG-PnU" secondAttribute="bottom" constant="5" id="nrC-kh-IDT"/>
                                             <constraint firstItem="cIj-0g-QtK" firstAttribute="leading" secondItem="eHQ-6p-cpO" secondAttribute="leading" constant="10" id="oik-KY-nAC"/>
                                             <constraint firstAttribute="trailing" secondItem="cIj-0g-QtK" secondAttribute="trailing" constant="10" id="tMC-9b-Cqb"/>
