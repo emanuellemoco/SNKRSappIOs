@@ -36,14 +36,11 @@ class CalendarViewController: UIViewController{
             Calendar(title: "Dunk Low Black", dia: "20", mes: "fev", imagePath: "image4"),
             Calendar(title: "Yeezy Bread", dia: "27", mes: "fev", imagePath: "image5"),
             Calendar(title: "Dunk Low Chicago", dia: "02", mes: "mar", imagePath: "imagem1"),
-
-
             ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        tableView.delegate = self
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -67,18 +64,8 @@ extension CalendarViewController: UITableViewDataSource, UITableViewDelegate {
         cell.diaLabel.text = calendars[indexPath.row].dia
         cell.mesLabel.text = calendars[indexPath.row].mes
         cell.tenisImage.image = UIImage(named: calendars[indexPath.row].imagePath)
-//        cell.date?.text = calendars[indexPath.row].date
         return cell
     }
     
 }
 
-
-//extension CalendarViewController: UITableViewDelegate {
-//    //// Saber em qual celula esta interagindo
-////    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-////        print(indexPath.row)
-////    }
-//}
-
-//cellIdentifier = "ReusableCell"

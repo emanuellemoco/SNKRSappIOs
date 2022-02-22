@@ -13,9 +13,3 @@ struct Calendar {
     let mes: String // Mes e ano do lançamento
     let imagePath: String // Nome da imagem
 }
-
-
-//@IBOutlet weak var diaLabel: UILabel!
-//@IBOutlet weak var mesLabel: UILabel!
-//@IBOutlet weak var tituloLabel: UILabel!
-//@IBOutlet weak var tenisImage: UIImageView!
